@@ -30,4 +30,24 @@
         margin: 10px 0;
         padding: 10px;
     }
+
+    /* - Hero Image - */
+    .hero-image {
+        height: 300px;
+    }
+
+    /* - Footer - */
+    .footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .footer a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer p + p {
+        margin-top: 10px;
+    }
 }
