@@ -19,6 +19,11 @@
         text-align: center;
     }
 
+    /* Barra separadora */
+    .title::after {
+        display: block !important;
+    }
+
     /* Header -> nav */
     .nav {
         flex-direction: column;
@@ -38,6 +43,8 @@
 
     /* - Footer - */
     .footer {
+        background: none;
+        background-color: #660000;
         font-size: 14px;
         padding: 15px 0;
     }

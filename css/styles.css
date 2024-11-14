@@ -50,6 +50,16 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Barra separadora (responsive) */
+.title::after {
+    content: "";
+    display: none !important;
+    height: 2px;
+    background-color: #f4f4f4;
+    display: block;
+    margin: 10px 0;
+}
+
 /* Header -> nav */
 .nav {
     display: flex;
@@ -70,6 +80,7 @@ body {
 
 .nav a:hover {
     transform: scale(1.05);
+    text-decoration: underline;
     background-color: #769656;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
