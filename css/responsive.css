@@ -34,11 +34,22 @@
     .nav a {
         margin: 10px 0;
         padding: 10px;
+        text-decoration: underline;
     }
 
     /* - Hero Image - */
     .hero-image {
         height: 300px;
+    }
+
+    /* - Sección de Próximo Torneo y Novedades - */
+    .tournament-and-news {
+        flex-direction: column;
+        align-items: stretch;
+    } 
+
+    .next-tournament, .news {
+        width: 100%;
     }
 
     /* - Footer - */

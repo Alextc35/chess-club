@@ -8,7 +8,7 @@
 /* - Generales - */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
 
@@ -105,63 +105,60 @@ body {
     object-position: center;
 }
 
-/* - Sección de Próximo Torneo - */
-.next-tournament {
-    background-color: #8b4a2d;
-    color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
+/* - Sección de Próximo Torneo y Novedades - */
+.tournament-and-news {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
     margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
 }
 
-.next-tournament h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+/* Próximo Torneo */
+.next-tournament, .news {
+    background: linear-gradient(to right, #8b4a2d, #660000);
+    color: #fff;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-tournament h2, .news h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .tournament-details {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
 }
 
 .tournament-name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .tournament-date {
     font-size: 18px;
-    color: #8b4a2d;
+    color: #666;
 }
 
-/* - Sección de novedades */
-.news {
-    background-color: #8b4a2d;
-    color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.news h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
+/* Novedades */
 .articles {
     display: flex;
     flex-direction: column;
@@ -171,23 +168,12 @@ body {
 .article {
     background-color: #e8e4c9;
     color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.article h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
     font-weight: bold;
-    color: #8b4a2d;
-}
-
-.article p {
-    font-size: 16px;
-    line-height: 1.5;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .article:hover {
