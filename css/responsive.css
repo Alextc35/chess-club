@@ -52,6 +52,37 @@
         width: 100%;
     }
 
+    .tournament-overlay, .article-overlay {
+        opacity: 1 !important;
+        width: 300px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .tournament-overlay h2, .tournament-overlay p,
+    .article-overlay p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .tournament-overlay h2, .article-overlay p {
+        text-align: center;
+    }
+
+    .tournament-link img, .article img {
+        width: 300px !important;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .tournament-link {
+        height: 200px;
+    }
+
     /* - Footer - */
     .footer {
         background: none;

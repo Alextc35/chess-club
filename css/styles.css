@@ -109,9 +109,8 @@ body {
 .tournament-and-news {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     background-color: #333;
-    border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
@@ -126,16 +125,20 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    width: 800px;
+    height: 800px;
 }
 
 .tournament-link {
     display: block;
     position: relative;
     text-decoration: none;
+    width: 800px;
+    height: 800px;
 }
 
 .tournament-image {
-    width: 100%;
+    width: 800px;
     height: auto;
     min-width: 300px;
     min-height: 300px;
@@ -144,12 +147,19 @@ body {
     border-radius: 10px;
 }
 
+.tournament-link img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .tournament-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: 800px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     display: flex;
@@ -186,6 +196,7 @@ body {
 }
 
 .article {
+    width: 800px;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -194,7 +205,7 @@ body {
 }
 
 .article-image {
-    width: 100%;
+    width: 800px;
     height: auto;
     min-width: 300px;
     min-height: 300px;
@@ -203,12 +214,19 @@ body {
     border-radius: 8px;
 }
 
+.article img {
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .article-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: 250px;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -234,9 +252,6 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     letter-spacing: 1px;
