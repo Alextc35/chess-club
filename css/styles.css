@@ -62,7 +62,7 @@ body {
     margin-left: 15px;
     text-decoration: none;
     padding: 25px 30px;
-    background-color: #769656;
+    background-color: #69923e;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -70,7 +70,7 @@ body {
 
 .nav a:hover {
     transform: scale(1.05);
-    background-color: #69923e;
+    background-color: #769656;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -81,9 +81,32 @@ body {
 
 /* - Footer - */
 .footer {
-    background-color: #660000;
+    background: linear-gradient(to right, #660000, #4b4847);
     color: #fff;
     text-align: center;
-    padding: 10px;
-    margin-top: 20;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer a {
+    color: #f4f4f4;
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #69923e;
+    text-decoration: underline;
+}
+
+.footer-nombre {
+    color: yellow;
+    font-weight: bold;
 }
