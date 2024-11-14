@@ -14,7 +14,7 @@ body {
 
 /* - Header - */
 .header {
-    background-color: #660000;
+    background: linear-gradient(to right,  #660000, #4b4847);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,11 +37,17 @@ body {
 
 /* Header -> title */
 .title {
-    font-size: 24px;
-    margin-left: 15px;
     flex-grow: 1; /* Crecerá en proporción de 1 */
+}
+
+.title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 20px;
     color: #f4f4f4;
-    flex-grow: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Header -> nav */
@@ -52,15 +58,25 @@ body {
 .nav a {
     color: #f4f4f4;
     font-size: 18px;
+    font-weight: 500;
     margin-left: 15px;
     text-decoration: none;
     padding: 25px 30px;
     background-color: #769656;
-    border-radius: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .nav a:hover {
+    transform: scale(1.05);
     background-color: #69923e;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav a:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(103, 150, 87, 0.5);
 }
 
 /* - Footer - */
