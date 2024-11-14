@@ -1,0 +1,73 @@
+/* - Modificamos estilos por defecto - */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* - Generales - */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* - Header - */
+.header {
+    background-color: #660000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/* Header -> logo */
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Header -> title */
+.title {
+    font-size: 24px;
+    margin-left: 15px;
+    flex-grow: 1; /* Crecerá en proporción de 1 */
+    color: #f4f4f4;
+    flex-grow: 1;
+}
+
+/* Header -> nav */
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 25px 30px;
+    background-color: #769656;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #69923e;
+}
+
+/* - Footer - */
+.footer {
+    background-color: #660000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20;
+}
