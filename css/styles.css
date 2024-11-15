@@ -109,7 +109,7 @@ body {
 .tournament-and-news {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
     background-color: #333;
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -125,41 +125,30 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    width: 800px;
-    height: 800px;
 }
 
 .tournament-link {
     display: block;
     position: relative;
     text-decoration: none;
-    width: 800px;
+    width: 100%;
     height: 800px;
 }
 
 .tournament-image {
-    width: 800px;
-    height: auto;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.tournament-link img {
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 
 .tournament-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     display: flex;
@@ -175,10 +164,16 @@ body {
     opacity: 1;
 }
 
-.tournament-overlay h2, .tournament-overlay p {
+.tournament-overlay h2 {
+    font-size: 24px;
     margin: 5px 0;
-    text-align: center;
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tournament-overlay p {
+    font-size: 18px;
+    margin: 5px 0;
     letter-spacing: 1px;
 }
 
@@ -193,30 +188,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 800px;
 }
 
 .article {
-    width: 800px;
+    width: 900px;
+    height: 266px;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    text-decoration: none;
+    border-radius: 10px;
     color: #fff;
 }
 
 .article-image {
-    width: 800px;
-    height: auto;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.article img {
-    width: 800px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     object-fit: cover;
     object-position: center;
 }
@@ -225,25 +212,25 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 800px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     opacity: 0;
     transition: opacity 0.3s;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .article:hover .article-overlay {
     opacity: 1;
 }
 
-.article-overlay p {
+.article-overlay h2 {
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
 }
 
 /* - Footer - */
