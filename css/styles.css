@@ -7,7 +7,8 @@
 
 /* - Generales - */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman", serif;
+
     background-color: #fff;
     color: #333;
 }
@@ -71,8 +72,9 @@ body {
     font-weight: 500;
     margin-left: 15px;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 25px 30px;
-    background-color: #69923e;
+    background-color: #3F5A25;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
