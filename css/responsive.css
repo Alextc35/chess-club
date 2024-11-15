@@ -1,6 +1,6 @@
 @media (max-width: 1440px) {
     .title {
-        display: none;
+        display: hidden;
     }
 }
 
@@ -15,21 +15,17 @@
 
     /* Header -> logo */
     .logo img {
-        width: 120px;
         height: 120px;
     }
 
     /* Header -> title */
     .title {
+        display: flex;
         font-size: 20px;
         text-align: center;
     }
 
     /* Barra separadora */
-    .title {
-        display: flex;
-    }
-
     .title::after {
         display: block !important;
     }
@@ -50,7 +46,6 @@
     /* - Hero Image - */
     .hero-image {
         background-color: #333;
-        padding: 5px;
         height: 300px;
     }
 
