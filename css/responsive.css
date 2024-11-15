@@ -1,6 +1,6 @@
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
     .title {
-        display: hidden;
+        display: none;
     }
 }
 
